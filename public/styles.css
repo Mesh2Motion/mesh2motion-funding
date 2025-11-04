@@ -11,3 +11,10 @@
 section {
     max-width: 100rem;
 }
+
+.active {
+    background-color: #ffffff41;
+    border-radius: 5px;
+    padding: 1.2rem 1rem;
+    border-radius: 0;
+}
