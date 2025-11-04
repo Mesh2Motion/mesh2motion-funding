@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <h1>Payment Successful</h1>
+    <p>Thank you for your purchase!</p> 
+
+    <div id="session-id"></div>
+
+
+    <script>
+        // On your success page (e.g., /success)
+            const urlParams = new URLSearchParams(window.location.search);
+            const sessionId = urlParams.get('session_id');
+
+            if (sessionId) {
+                console.log('Payment Session ID:', sessionId);
+                // Display to user or store for reference
+                document.getElementById('session-id').textContent = sessionId;
+            }
+    </script>
+
+</body>
+</html>
+
+<!-- Test out with this information
+http://127.0.0.1:57261/success?session_id=cs_test_a1xARy263vKi3NYHjv8p3BVa18wOqCHsVJ9zkJJsbZCQIaRzQiyXgXEFSE
+-->

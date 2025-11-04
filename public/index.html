@@ -4,10 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-</head>
-<body>
-    <h1>Hello World</h1>
+    <link rel="stylesheet" href="./styles.css">
 
-    <button onclick="fetch('/api/books')">Fetch books API from Hono</button>
-</body>
+    <!-- make sure to load stripe from here to be PCI compliant -->
+    <script src="https://js.stripe.com/clover/stripe.js"></script>
+    <script type="module" src="main.js"></script>
+</head>
+    <body>
+        <h1>Hello World</h1>
+        <div id="checkout-container"></div>
+
+    </body>
 </html>
