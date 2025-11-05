@@ -4,13 +4,48 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./styles-shared.css"> <!-- shared styles between marketing and funding site -->
     <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
-    <h1>Payment Successful</h1>
-    <p>Thank you for your purchase!</p> 
+    <header>
+            <nav>
+                <ul>
+                    <li>
+                        <a class="image-link" href="https://mesh2motion.org">
+                            <img src="./images/mesh2motion.svg" style="width: 200px; height: auto" />
+                        </a>
+                    </li>
+                    <li class="mobile-hidden"><a href="https://mesh2motion.org/index.html#features">Features</a></li>
+                    <li class="mobile-hidden"><a href="https://mesh2motion.org/index.html#walkthrough">Walkthrough</a></li>
+                    <li class="mobile-hidden"><a href="https://mesh2motion.org/index.html#contribute">Contribute</a></li>
+                    <li class="mobile-hidden"><a href="https://mesh2motion.org/news.html">News</a></li>
+                    <li class="mobile-hidden"><span class="active"> 💗 Support</span></li>
+                    <li class="mobile-hidden"><a target="_blank" href="https://github.com/scottpetrovic/mesh2motion-app/">
+                        <img src="./images/github-white-icon.png" width="20" /> 
+                    </a></li>
+                    <li class="mobile-hidden" style="flex-grow: 1"></li>
+                    <li class="mobile-hidden"><a class="primary-button" href="https://app.mesh2motion.org">Try it out</a></li>
+                </ul>
+            </nav>
+        </header>
 
-    <div id="session-id"></div>
+        <main>
+            <h1>Thank you!</h1>
+
+            <section>
+                <p>These assets are free for everyone, but your contribution helps keep this project alive and growing. You didn't have to pay, but you chose to—and that means everything. Thanks for being awesome!</p> 
+
+                <p>Keep track of this receipt code if there are any issues in the future. This will help find transactions if there are any issues.</p>
+
+                <div id="session-id"></div>
+
+                <a class="primary-button" href="/">Go back</a>
+            </section>
+          
+        </main>
+
+   
 
 
     <script>

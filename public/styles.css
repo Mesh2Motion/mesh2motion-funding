@@ -7,18 +7,65 @@
     box-shadow: 4px 1px 20px 0px #1b1567;
 }
 
+main {
+    background: linear-gradient(rgb(69 39 103 / 82%), rgb(27 18 35 / 86%)), url(./images/background-hero.png);
+    background-size: cover;
+}
+
+input {
+    padding: 1rem;
+    margin: 1rem;
+    border-radius: 0.5rem;
+    box-shadow: 3px 3px 9px grey inset;
+    font-size: 1.4rem;
+}
+
 /* overriding some default shared styles */
+h1 {
+    font-size: 1.6rem;
+    background: #4b18bd;
+    padding: 1.3rem;
+    text-align: center;
+    box-shadow: -4px 5px 13px #221045;
+}
+
 section {
-    max-width: 100rem;
+    max-width: 75rem;
     background: none;
+}
+section span {
+    width: initial;
+}
+
+.bullet-point {
+    font-size: 1.4rem;
 }
 
 .active {
     background-color: #ffffff41;
     padding: 0.5rem 1.25rem;
     border-radius: 0.25rem;
+    white-space: nowrap;
 }
 
 .tip-metrics-container span {
     font-size: 1.7rem;
+}
+
+table {
+    border: 1px solid #9e7caf;
+    padding: 2rem;
+    border-radius: 0.5rem;
+}
+tr {
+    vertical-align: top;
+    display: flex;
+    margin-bottom: 1.5rem;
+}
+td {
+    padding: 0.5rem;
+}
+
+footer {
+    margin-top: 0;
 }
