@@ -41,45 +41,66 @@
             <main>
               
                 <section id="hero-donation">
-                    <span>
 
+                    <!-- left column -->
+                    <span style="max-width: 45rem; margin: auto;">
+
+                        <!-- top row with header and tip button-->
+                        <div style="display: flex; flex-direction: row; gap: 1rem; justify-content: space-evenly; align-items: center;">
                             <h1>Artwork with<br/>NO STRINGS ATTACHED</h1>
 
-                            <input type="text" placeholder="Enter your tip amount" value="10" />
-
-                            <table>
-                                <tbody>
-                                    <tr>
-                                        <td class="bullet-point">⭐</td>
-                                        <td><strong>Pay an animator</strong>
-                                            <br/>Help build an animation library for all to use.</td>
-                                    </tr>
-                                    <tr>
-                                        <td class="bullet-point">⭐</td>
-                                        <td><strong>Hosting Costs and Application Development</strong>
-                                            <br/>Help pay for monthly hosting charges, and supercharge development.</td>
-                                    </tr>
-                                    <tr>
-                                        <td class="bullet-point">⭐</td>
-                                        <td><strong>100% Yours</strong>
-                                            <br/>Zero restrictions. Every skeleton, model, rig, and animation are CC0. Free for anything: commercial or personal. No attribution required.</td>
-                                    </tr>
-                                </tbody>
-                            </table>
-
-
-                            <div class="tip-metrics-container">
-                                <span id="successful-payments-count"></span>
-                                <span> people have tipped</span>
+                            <div style="margin: 1rem 0; flex-direction: column; display: flex; text-align: center; gap: 0.5rem;">
+                                <div>
+                                    <span id="select-tip-step">
+                                        <input type="text" id="tip-amount" placeholder="Enter your tip amount" value="10" />
+                                        <button class="primary-button" id="tip_button">Tip</button>
+                                    </span>
+                                    <span id="reload-step" style="display: none;">
+                                        <!-- once the stripe widget is created, it cannot be destroyedad remade -->
+                                        <button onclick="location.reload()" class="primary-button">Change amount</button>
+                                    </span>
+                                </div>
+                                <div>
+                                    <a href="#">or scan with Venmo QR code</a>
+                                </div>
                             </div>
 
+                        </div>
+
+                        <!-- bottom table with benefits -->
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td class="bullet-point">⭐</td>
+                                    <td><strong>Pay an animator</strong>
+                                        <br/>Help build an animation library for all to use.</td>
+                                </tr>
+                                <tr>
+                                    <td class="bullet-point">⭐</td>
+                                    <td><strong>Hosting Costs and Application Development</strong>
+                                        <br/>Help pay for monthly hosting charges, and supercharge development.</td>
+                                </tr>
+                                <tr>
+                                    <td class="bullet-point">⭐</td>
+                                    <td><strong>100% Yours</strong>
+                                        <br/>Zero restrictions. Every skeleton, model, rig, and animation are CC0. Free for anything: commercial or personal. No attribution required.</td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+
                             <div class="tip-metrics-container">
+                                <span>In total </span>
+                                <span id="successful-payments-count"></span>
+                                <span> people have tipped</span>
                                 <span>$</span>
                                 <span id="cumulative-payment-amount"></span>
                             </div>
                     </span>
-                    <span style="min-width: 20rem;">
-                        <div id="checkout-container"></div>    
+
+                    <!-- right column -->
+                    <span id="stripe-checkout-area" style="min-width: 20rem; display: none">
+                        <span id="checkout-container"></div>    
                     </span>
 
                 </section>

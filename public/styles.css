@@ -13,11 +13,14 @@ main {
 }
 
 input {
-    padding: 1rem;
-    margin: 1rem;
+    padding: 0.5rem;
     border-radius: 0.5rem;
-    box-shadow: 3px 3px 9px grey inset;
+    box-shadow: 3px 3px 9px #844bab inset;
     font-size: 1.4rem;
+    background: #ffffff;
+    border: none;
+    text-align: center;
+    width: 10rem;
 }
 
 /* overriding some default shared styles */
@@ -27,6 +30,7 @@ h1 {
     padding: 1.3rem;
     text-align: center;
     box-shadow: -4px 5px 13px #221045;
+    transform: rotateZ(-12deg);
 }
 
 section {
@@ -48,8 +52,12 @@ section span {
     white-space: nowrap;
 }
 
+.tip-metrics-container {
+    text-align: center;
+    padding: 1rem;
+}
 .tip-metrics-container span {
-    font-size: 1.7rem;
+    font-size: 1.2rem;
 }
 
 table {
