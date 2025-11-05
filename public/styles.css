@@ -23,6 +23,29 @@ input {
     width: 10rem;
     border-radius: 0;
 }
+@media (max-width: 1000px) {
+    input {
+        width: 100%;
+        padding: 1rem;
+    }   
+}
+
+
+#information-header {
+    display: flex; 
+    flex-direction: row; 
+    gap: 1rem; 
+    justify-content: space-evenly; 
+    align-items: center;
+}
+@media (max-width: 1000px) {
+    #information-header {
+        flex-direction: column;
+        gap: 0.5rem;
+    }   
+}
+
+
 
 /* overriding some default shared styles */
 h1 {
@@ -32,6 +55,12 @@ h1 {
     text-align: center;
     box-shadow: -4px 5px 13px #221045;
     transform: rotateZ(-12deg);
+}
+@media (max-width: 1000px) {
+    h1 {
+        transform: none;
+        width: 100%;
+    }   
 }
 
 section {
