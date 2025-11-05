@@ -98,8 +98,10 @@ footer {
     margin-top: 8rem;
 }
 #thank-you-container h1 {
-    transform: none;
     margin-top: 0;
+    transform: rotate(-5deg);
+    top: -13px;
+    position: relative;
 }
 
 #session-id {

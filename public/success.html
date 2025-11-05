@@ -6,6 +6,7 @@
     <title>Thank you! - Mesh2Motion</title>
     <link rel="stylesheet" href="./styles-shared.css"> <!-- shared styles between marketing and funding site -->
     <link rel="stylesheet" href="./styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.2/dist/confetti.browser.min.js"></script>
 </head>
 <body>
     <header>
@@ -49,14 +50,38 @@
 
     <script>
         // On your success page (e.g., /success)
-            const urlParams = new URLSearchParams(window.location.search);
-            const sessionId = urlParams.get('session_id');
+        const urlParams = new URLSearchParams(window.location.search);
+        const sessionId = urlParams.get('session_id');
 
-            if (sessionId) {
-                console.log('Payment Session ID:', sessionId);
-                // Display to user or store for reference
-                document.getElementById('session-id').textContent = sessionId;
-            }
+        // Function to create confetti bursts
+        function createConfettiBurst(particleCount, angle, spread, origin, delay = 0) {
+            setTimeout(() => {
+                const config = {
+                    particleCount: particleCount,
+                    spread: spread,
+                    origin: origin
+                };
+                
+                if (angle !== undefined) {
+                    config.angle = angle;
+                }
+                
+                confetti(config);
+            }, delay);
+        }
+
+        if (sessionId) {
+            console.log('Payment Session ID:', sessionId);
+            // Display to user or store for reference
+            document.getElementById('session-id').textContent = sessionId;
+            
+            // Trigger confetti celebration!
+            createConfettiBurst(100, undefined, 70, { y: 0.6 }, 0);
+            createConfettiBurst(50, 60, 55, { x: 0 }, 250);
+            createConfettiBurst(50, 120, 55, { x: 1 }, 400);
+        }
+
+
     </script>
 
 </body>
