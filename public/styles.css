@@ -10,13 +10,13 @@
 /* overriding some default shared styles */
 section {
     max-width: 100rem;
+    background: none;
 }
 
 .active {
     background-color: #ffffff41;
-    border-radius: 5px;
-    padding: 1.2rem 1rem;
-    border-radius: 0;
+    padding: 0.5rem 1.25rem;
+    border-radius: 0.25rem;
 }
 
 .tip-metrics-container span {
