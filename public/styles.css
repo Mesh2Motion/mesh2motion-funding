@@ -8,14 +8,14 @@
 }
 
 main {
-    background: linear-gradient(rgb(69 39 103 / 82%), rgb(27 18 35 / 86%)), url(./images/background-hero.png);
+    background: linear-gradient(rgb(43 45 64 / 77%), rgb(43 45 64)), url(./images/background-hero.png);
     background-size: cover;
 }
 
 input {
     padding: 0.5rem;
     border-radius: 0.5rem;
-    box-shadow: 3px 3px 9px #844bab inset;
+    box-shadow: 3px 3px 9px #49397c inset;
     font-size: 1.4rem;
     background: #ffffff;
     border: none;
@@ -50,10 +50,10 @@ input {
 /* overriding some default shared styles */
 h1 {
     font-size: 1.6rem;
-    background: #4b18bd;
+    background: #2f5075;
     padding: 1.3rem;
     text-align: center;
-    box-shadow: -4px 5px 13px #221045;
+    box-shadow: -4px 5px 13px #32244f;
     transform: rotateZ(-12deg);
 }
 @media (max-width: 1000px) {
@@ -136,7 +136,7 @@ footer {
 #session-id {
     padding: 1rem;
     word-break: break-all;
-    background: #2c1839;
+    background: #2a2832;
     border: 1px solid #5b5b5b;
     margin-bottom: 2rem;
 }
